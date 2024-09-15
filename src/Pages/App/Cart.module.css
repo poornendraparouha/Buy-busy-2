@@ -1,0 +1,114 @@
+/* Cart page Styles */
+.noItemsHeading{
+    margin-top: 2rem;
+    text-align: center;
+}
+
+/* In left total price */
+.cartTotalContainer{
+    margin-top: 5rem;
+    position: fixed;
+    display: inline-block;
+    width: 15%;
+    margin-right: 16px;      
+    padding: 16px;
+    background-color: #F1F1F1;
+    border-radius: 16px;
+}
+
+/* In center all cart products div */
+.cartItemsContainer{
+    margin: 2rem auto;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Total wrapper */
+.wrapper{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Total heading */
+.heading{
+    text-align: center;
+    color: #224957;
+    font-size: 1.2rem;
+    font-weight: bolder;
+    margin-bottom: 2rem;
+}
+
+/* Purchase Button */
+.purchaseButton{
+    height: 2rem;
+    width: 160px;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    padding: 2px;
+    border-radius: 10px;
+    color: white;
+    background-color: #7064E5;
+    border: none;
+    box-shadow: 0px 2px 10px 2px lightgrey;
+}
+
+.purchaseButton:hover{
+    color: #7064E5;
+    background-color: rgba(115, 102, 229, 0.1);
+    border: 2px solid #7064E5;
+}
+
+
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+    .cartTotalContainer {
+        width: 100%; 
+        margin: 0; /* Remove margin for smaller screens */
+        padding: 10px; 
+        text-align: center; 
+        position: static; 
+    }
+
+    .cartItemsContainer {
+        width: 100%; 
+        justify-content: center; /* Center align items for smaller screens */
+        margin: 1rem auto; 
+    }
+
+    .wrapper {
+        padding: 10px; 
+        flex-direction: column; 
+    }
+
+    .heading {
+        font-size: 1rem; 
+        margin-bottom: 1rem; 
+    }
+
+    .purchaseButton {
+        width: 100%; 
+        margin-bottom: 2rem; 
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .cartTotalContainer {
+        width: 100%; 
+        margin: 0;
+        padding: 10px; 
+        text-align: center; 
+        position: static; 
+    }
+
+    .cartItemsContainer {
+        width: 100%; 
+        justify-content: center;
+        margin: 1rem auto; 
+    }
+  }

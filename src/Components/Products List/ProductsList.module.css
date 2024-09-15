@@ -1,0 +1,16 @@
+.productListConatiner{
+    margin-bottom: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Media queries for responsiveness */
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+    /* Product list container */
+    .productListConatiner {
+        margin-bottom: 1rem; 
+        justify-content: space-around; 
+    }
+}

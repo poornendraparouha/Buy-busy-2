@@ -1,0 +1,132 @@
+.productCardContainer {
+    margin-bottom: 1.8rem;
+    height: auto;
+    padding: 1.8rem;
+    width: 31%;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 2px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  }
+
+.productCardContainer:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); 
+}
+
+.imageContainer{
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.2rem;
+    height: 70%;
+}
+
+.productImage {
+  width: 100%;
+  border-radius: 8px; 
+}
+
+.productTitleContainer{
+    margin-bottom: 1.2rem;
+    height: 3.2rem;
+}
+
+.productTitle {
+    font-size: 1.4rem;
+    color: #224957;
+    font-weight: bold;
+    display: -webkit-box;
+    -webkit-line-clamp: 2; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis; 
+  }
+
+.productPrice {
+  /* margin-bottom: 8px; */
+  font-size: 1.6rem; 
+  font-weight: bold;
+  color: #224957;
+}
+
+.removeFromCartBtn {
+  height: 3.2rem;
+  width: 100%;
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  padding: 8px;
+  border-radius: 8px;
+  color: white;
+  text-align: center;
+  background-color: #F14444;
+  border: 1px solid red;
+  transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.removeFromCartBtn:hover {
+  color: #F14444;
+  background-color: white; 
+  border: 1px solid red;
+}
+
+.priceAndQtyContainer{
+    margin-bottom: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.qtyContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.qtyContainer p{
+    margin: 0 1rem;
+    font-size: 1.8rem;
+}
+
+.qtyContainer img{
+    height: 1.8rem;
+}
+
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+  .productCardContainer {
+      width: 100%;
+      margin: 1rem; 
+  }
+
+  .imageContainer {
+      height: auto; 
+  }
+
+  .productTitleContainer {
+      height: auto; 
+  }
+
+  .productPrice {
+      margin-bottom: 8px; 
+  }
+
+  .priceAndQtyContainer {
+      margin-bottom: 8px; 
+      flex-direction: column; 
+  }
+
+  .qtyContainer {
+      margin-top: 8px; 
+  }
+
+  .removeFromCartBtn {
+      margin-bottom: 1.2rem; 
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+  .productCardContainer {
+      width: 45%;
+      margin: 1rem;
+  }
+}
+

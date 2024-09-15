@@ -1,0 +1,84 @@
+/* Home page Styles */
+
+/* Serach bar div */
+.searchBarContainer{
+    width: 31%;
+    margin: 2rem auto 3.8rem auto;
+}
+
+/* Search bar */
+.searchBar{
+    padding: 12px;
+    font-size: 1.5rem;
+    width: 100%;
+    border-radius: 10px;
+    color: #7064E5;
+    background-color: #F4F6F8;
+    border: 1px solid #7064E5;
+}
+
+/* Serach bar on focus */
+.searchBar:focus{
+    outline: #7064E5;
+}
+
+/* Left side serach and filter div */
+.searchFilterContainer{
+    width: 16%;
+    display: inline-block;
+}
+
+/* In center all products div */
+.productsContainer{
+    width: 70%;
+    display: inline-block;
+}
+
+/* Media queries for responsiveness */
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+    .searchBarContainer {
+        width: 90%;
+        max-width: none;
+        margin: 1rem auto 2rem auto;
+    }
+
+    
+    .searchBar {
+        font-size: 1.3rem;
+    }
+
+    
+    .searchFilterContainer {
+        width: 100%;
+        max-width: none;
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+   
+    .productsContainer {
+        width: 100%;
+        max-width: none;
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .searchBarContainer {
+        width: 80%;
+        max-width: none;
+        margin: 1rem auto 2rem auto;
+    }
+
+    .searchFilterContainer {
+        margin: 1rem auto;
+        display: block;
+        width: 80%;
+    }
+    .productsContainer {
+        width: 100%;
+        max-width: none;
+        display: block;
+    }
+  }

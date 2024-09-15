@@ -1,0 +1,76 @@
+/* OrderTable.module.css */
+.orderTableContainer {
+    width: 70%;
+    margin: 20px auto;
+    border: 2px solid #5D6D7E;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(93, 109, 126, 0.5);
+    background-color: #F4F6F7;
+}
+
+.orderCreatedHeading {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #224957;
+    text-align: center;
+}
+
+.orderTable {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.orderTable th, .orderTable td {
+    border: 1px solid #AEB6BF;
+    padding: 8px;
+    text-align: left;
+    color: #17202A;
+}
+
+.orderTable th {
+    background-color: #85C1E9;
+    color: #17202A;
+    font-weight: bold;
+}
+
+.orderTable td {
+    vertical-align: top;
+}
+
+.orderTable tr:nth-child(even) {
+    background-color: #D6EAF8;
+}
+
+.orderTable tr:nth-child(odd) {
+    background-color: #EBF5FB;
+}
+
+.totalRow{
+    font-weight: bolder;
+}
+
+
+/* OrderTable.module.css */
+/* Mobile devices */
+@media only screen and (max-width: 768px) {
+    .orderTableContainer {
+        width: 90%; 
+        margin: 10px auto; 
+        padding: 10px; 
+    }
+
+    .orderCreatedHeading {
+        font-size: 18px; 
+        margin-bottom: 8px;
+    }
+
+    .orderTable th, .orderTable td {
+        padding: 6px; 
+        font-size: 14px; 
+    }
+
+    .totalRow {
+        font-size: 16px; 
+    }
+}
