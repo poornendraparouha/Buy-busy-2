@@ -28,6 +28,7 @@ The project is organized into several components, pages, and database and Redux 
     - Reducers
     - Store.js
 
+
 ## Firestore Database Structure 
 #### collections:
 - users: Store users' information.
@@ -46,13 +47,14 @@ To get a local copy of the project and run it on your machine, follow these step
 - git clone https://github.com/poornendraparouha/Buy-busy-2.git
 
 2. Navigate to the project directory:
-- cd BuyBusy-II
+- cd BuyBusy-2
 
 3. Install dependencies:
 - npm install
 
 4. Set up Firebase:
 - Create a Firebase project and set up Firestore.
+- Set up Firestore email and password authentication.
 - Obtain Firebase configuration credentials.
 - Add Firebase config in firebaseConfig.js or similar, if not already present.
 
